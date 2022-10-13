@@ -21,3 +21,9 @@
     display: flex;
     margin-top: -35px;
 }
+
+.icono-img{
+	position: relative;
+	height: 140px;
+	top: -20px;
+}

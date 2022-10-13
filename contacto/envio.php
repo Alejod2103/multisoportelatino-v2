@@ -1,7 +1,7 @@
 <?php
 
-$destino = "contact@multiservicecall.com";
-//Esto es al correo que se enviarÃ¡ el mensaje
+$destino = "alejod2103@gmail.com";
+//Esto es al correo que se enviara el mail
 
 $nombre = $_POST['nombre']; 
 $email = $_POST['email'];
