@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.svg" type="image" sizes="8x8">
     <link href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' rel='stylesheet' type='text/css'/>
+
+    <!-- Recursos del boton whatsapp -->
     <link href='/whatsapp/dist/css/animate.min.css' rel='stylesheet' type='text/css'/>
     <link href="/whatsapp/whatsapp.css" rel="stylesheet">
 
@@ -365,6 +367,7 @@
             left: 40%;
             margin-left: 10%;
             -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: scale();
             z-index: 4
         }
 
@@ -375,18 +378,22 @@
             border-radius: 100%;
             display: inline-block;
             -webkit-animation: slide 1s infinite;
+            animation: normal;
         }
 
         .mobirise-spinner em:nth-child(1) {
             -webkit-animation-delay: 0.1s;
+            animation-delay: initial;
         }
 
         .mobirise-spinner em:nth-child(2) {
             -webkit-animation-delay: 0.2s;
+            animation-delay: initial;
         }
 
         .mobirise-spinner em:nth-child(3) {
             -webkit-animation-delay: 0.3s;
+            animation-delay: initial;
         }
 
         @-webkit-keyframes slide {
@@ -593,7 +600,8 @@
         }
 
         [type="submit"] {
-            -webkit-appearance: none
+            -webkit-appearance: none;
+            appearance: none;
         }
 
         section.menu {
@@ -4990,7 +4998,9 @@ background: #d0f9fb;
 
 
     </style>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -5006,7 +5016,6 @@ background: #d0f9fb;
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/responsive.css">
-
 
 </head>
 
@@ -5028,10 +5037,12 @@ background: #d0f9fb;
 
                 <!-- NAVBAR ITEMS -->
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    
                     <li class="nav-item">
                         <a class="nav-link mbr-bold link text-info display-4" href="/">HOME</a>
                         <a class="nav-link mbr-bold link text-info display-4" href="/blog">BLOG</a>
                     </li>
+
                     <li class="nav-item dropdown" style="text-align: center;" >
                         <a class="nav-link link mbr-bold text-info dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="true" style="font-size: 13px;"  >SERVICIOS DE TELECOMUNICACIONES</a>
                         <div class="dropdown-menu">
@@ -5043,7 +5054,6 @@ background: #d0f9fb;
                         </div>
                     </li>
 
-
                     <li class="nav-item dropdown" style="text-align: center;" >
                         <a class="nav-link link mbr-bold text-info dropdown-toggle display-4" style="font-size: 13px;" data-toggle="dropdown-submenu" aria-expanded="true">UTILIDADES</a>
                         <div class="dropdown-menu">
@@ -5054,32 +5064,20 @@ background: #d0f9fb;
                     </li>
 
                 </ul>
-                
-                                
-                <!-- NAVBAR ITEMS END -->
+
             </div>
 
             <div class="wrap">
 
-                <!-- SOCIAL ICON -->
-
-
-
-                <!-- <h6 class="phone mbr-fonts-style  mbr-bold" mbr-if="showPhone" mbr-theme-style="display-5" data-app-selector=".phone">
-                        +(800)123-45-67</h6> -->
-
                 <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary-outline display-4" href="/contacto">Contactenos</a></div>
             </div>
-            <!-- SOCIAL ICON END -->
 
         </div>
     </amp-sidebar>
     <section class="menu1 menu horizontal-menu cid-rZBKc5kO6r" id="menu1-0">
 
-        <!-- <div class="menu-wrapper"> -->
         <nav class="navbar navbar-dropdown navbar-expand-lg navbar-fixed-top">
             <div class="menu-container container-fluid">
-                <!-- SHOW LOGO -->
                 <div class="navbar-brand">
 
                     <div class="col-lg-5">
@@ -5090,14 +5088,11 @@ background: #d0f9fb;
                     </div>
 
                 </div>
-                <!-- SHOW LOGO END -->
 
-                <!-- COLLAPSED MENU -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
                     <div class="wrap wrap-1">
-                        <!-- NAVBAR ITEMS -->
                         <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                             <li class="nav-item">
                                 <a class="nav-link mbr-bold link text-info display-4" href="/">HOME</a>
@@ -5125,7 +5120,6 @@ background: #d0f9fb;
                                 </div>
                             </li>
                         </ul>
-                        <!-- NAVBAR ITEMS END -->
                     </div>
 
                     <div class="wrap">
@@ -5366,7 +5360,7 @@ background: #d0f9fb;
                     </div>
                 </div>
                 <div class="mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-4 image">
-                    <amp-img src="assets/images/man-2.png" alt="image" height="207" width="346.80628272251306" layout="responsive" class="mobirise-loader">
+                    <amp-img src={} alt="image" height="207" width="346.80628272251306" layout="responsive" class="mobirise-loader">
                         <div placeholder="" class="placeholder">
                             <div class="mobirise-spinner">
                                 <em></em>
@@ -5784,7 +5778,7 @@ background: #d0f9fb;
                                 <div class="list-item list-item-1">
                                     <a href="#" target="_blank" class="iconfont-wrapper iconfont-wrapper-1">
                         <span class="amp-iconfont animation-normal mobi-mbri-globe-2 mobi-mbri amp-iconfont-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22c-1.2 0-2.6-1.9-3.3-4.8 2.2-.3 4.5-.3 6.7 0-.8 2.9-2.2 4.8-3.4 4.8zm0-20c1.2 0 2.6 1.9 3.3 4.8-2.1.2-4.4.2-6.6 0C9.4 3.9 10.8 2 12 2zM8 12c0-1.2.1-2.3.2-3.3 1.3.2 2.5.3 3.8.3 1.3 0 2.5-.1 3.8-.3.2 1 .2 2.1.2 3.3 0 1.2-.1 2.3-.2 3.3-2.5-.3-5.1-.3-7.5 0-.2-1-.3-2.1-.3-3.3zm9.7-3.6c1.1-.2 2.1-.5 3.2-.9.7 1.4 1.1 2.9 1.1 4.5s-.4 3.1-1.1 4.5c-1.1-.4-2.1-.6-3.2-.9.2-1.1.3-2.3.3-3.6 0-1.3-.1-2.5-.3-3.6zm2.1-2.6c-.8.3-1.6.5-2.5.6-.3-1.4-.8-2.6-1.4-3.6 1.6.7 2.9 1.7 3.9 3zm-11.7-3C7.5 3.8 7 5 6.6 6.4c-.8-.1-1.6-.3-2.4-.6 1-1.3 2.3-2.3 3.9-3zm-5 4.7c1.1.4 2.1.6 3.2.9C6.1 9.5 6 10.7 6 12s.1 2.5.3 3.6c-1.1.2-2.1.5-3.2.9C2.4 15.1 2 13.6 2 12s.4-3.1 1.1-4.5zm1.1 10.7c.8-.3 1.6-.5 2.5-.6.3 1.4.8 2.6 1.4 3.6-1.6-.7-2.9-1.7-3.9-3zm11.7 3c.6-1 1.1-2.2 1.4-3.6.8.2 1.7.4 2.5.6-1 1.3-2.3 2.3-3.9 3z"></path></svg></span>
-                    </a>
+                        </a>
                                     <h6 class="mbr-fonts-style display-7">
                                         <a href="" class="link text-white">
                             contact@multiservicecall.com
@@ -5794,7 +5788,7 @@ background: #d0f9fb;
                                 <div class="list-item list-item-1">
                                     <a href="#" target="_blank" class="iconfont-wrapper iconfont-wrapper-1">
                         <span class="amp-iconfont animation-normal mobi-mbri-phone mobi-mbri amp-iconfont-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30"><path d="M18.9 24l-.7-.4C14.4 21.5 11 19.1 7.9 16 4.9 13 2.4 9.6.4 5.8L0 5.1 5.1 0l6.2 6.2-2 2.9 5.5 5.5 2.9-2 6.2 6.2-5 5.2zm-9.6-9.3c2.8 2.7 5.8 5 9.2 6.9l2.7-2.7-3.6-3.6-2.9 2-7.9-7.9 2-2.9-3.7-3.7-2.6 2.7c1.9 3.4 4.1 6.4 6.8 9.2z"></path></svg></span>
-                    </a>
+                        </a>
                                     <h6 class="mbr-fonts-style display-7">
                         <a href="tel:+1(813)291-33835" class="link text-white">
                                         +1(813)291-3383
